@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Modern developer portfolio – full-stack engineer, projects, skills & contact">
+  <title>Alex Rivera | Dev Portfolio</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- custom styles & scripts -->
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
 
+  <!-- Sticky Navigation -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">&lt;Alex Rivera /&gt;</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">👋 Hi, I'm Alex</span>
+          <h1>Building <span class="gradient-text">digital experiences</span> that matter.</h1>
+          <p>Full‑stack developer with 5+ years of expertise in React, Node.js, and cloud architecture. I turn complex problems into smooth, scalable solutions.</p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">View projects <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">Let's talk</a>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="code-card">
+            <div class="code-line"><span class="keyword">const</span> developer = {</div>
+            <div class="code-line indent">name: <span class="string">"Alex Rivera"</span>,</div>
+            <div class="code-line indent">role: <span class="string">"Full‑Stack Engineer"</span>,</div>
+            <div class="code-line indent">passion: <span class="string">"UI/UX + clean code"</span></div>
+            <div class="code-line">};</div>
+            <div class="code-line"><span class="keyword">export default</span> developer;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Work / Projects -->
+    <section id="work">
+      <div class="container">
+        <h2 class="section-title">Featured projects</h2>
+        <div class="projects-grid" id="projects-container">
+          <!-- Projects will be injected via JS (keeping HTML clean) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Tech arsenal</h2>
+        <div class="skills-grid" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- Contact + fun fact -->
+    <section id="contact">
+      <div class="container contact-wrapper">
+        <div class="contact-info">
+          <h2>Let's build something <span class="gradient-text">great</span> together</h2>
+          <p>Got an exciting project or just want to chat? I'm one message away.</p>
+          <ul class="contact-details">
+            <li><i class="fas fa-map-marker-alt"></i> Austin, TX / Remote</li>
+            <li><i class="fas fa-envelope"></i> alex.rivera@devportfolio.me</li>
+            <li><i class="fab fa-github"></i> github.com/alexrivera</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email address" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder="Tell me about your idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send message <i class="fas fa-paper-plane"></i></button>
+          <p class="form-feedback" id="formFeedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 Alex Rivera – crafted with <i class="fas fa-heart" style="color: #3B82F6;"></i> for the dev community</p>
+    </div>
+  </footer>
+</body>
+</html>
